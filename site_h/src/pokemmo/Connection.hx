@@ -21,11 +21,8 @@ import pokemmo.Battle;
  */
 
 class Connection {
-	inline static public var SERVER_HOST:String = "http://25.103.184.4:2828";
-	inline static public var REGSERVER_HOST:String = "http://25.103.184.4:2827";
-	
-	//inline static public var SERVER_HOST:String = "http://localhost:2828";
-	//inline static public var REGSERVER_HOST:String = "http://localhost:2827";
+	inline static public var SERVER_HOST:String = "http://localhost:2828";
+	inline static public var REGSERVER_HOST:String = "http://localhost:2827";
 	
 	//inline static public var SERVER_HOST:String = "http://pokemmo.net:2828";
 	//inline static public var REGSERVER_HOST:String = "http://pokemmo.net:2827";
