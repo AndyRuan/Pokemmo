@@ -2,8 +2,8 @@ var mongodb = require('mongodb');
 var request = require('request');
 var crypto = require('crypto');
 
-var captchaPrivateKey = '6Lfxuc4SAAAAANJ74qlKAhY12SzZnp3XEcr9foed';
-var captchaPublicKey = '6Lfxuc4SAAAAAJmKHMi1LS1DkjXj18CvHbd_geFW';
+var captchaPrivateKey = '6Le9xNwSAAAAAD_M-1zS3vkIopm313_dvkXq1a4R';
+var captchaPublicKey = '6Le9xNwSAAAAAMUkI0hsl-IkZaKWZ_QDFH2yYf98';
 
 var server = new mongodb.Server("127.0.0.1", 27017, {});
 var dbclient;

@@ -2411,7 +2411,7 @@ pokemmo.Chat.filterChatText = function() {
 pokemmo.Connection = function() { }
 pokemmo.Connection.__name__ = true;
 pokemmo.Connection.setup = function() {
-	pokemmo.Connection.socket = io.connect("http://localhost:2828");
+	pokemmo.Connection.socket = io.connect("http://25.103.184.4:2828");
 	pokemmo.Connection.socket.on("connect",pokemmo.Connection.onConnect);
 	pokemmo.Connection.socket.on("disconnect",pokemmo.Connection.onDisconnect);
 	pokemmo.Connection.socket.on("setInfo",pokemmo.Connection.onSetInfo);
@@ -3335,7 +3335,7 @@ pokemmo.PokemonConst.getStatusApplyPhrase = function(id,name) {
 pokemmo.RegisterScreen = function() { }
 pokemmo.RegisterScreen.__name__ = true;
 pokemmo.RegisterScreen.init = function() {
-	pokemmo.RegisterScreen.regsocket = io.connect("http://localhost:2827");
+	pokemmo.RegisterScreen.regsocket = io.connect("http://25.103.184.4:2827");
 	pokemmo.RegisterScreen.ignoreDisconnect = false;
 	pokemmo.RegisterScreen.confirmBtn = new pokemmo.ui.UIButton(410,490,130,30);
 	pokemmo.RegisterScreen.confirmBtn.drawIdle = function(ctx) {
@@ -5052,8 +5052,8 @@ pokemmo.Chat.BUBBLE_MAX_WIDTH = 150;
 pokemmo.Chat.inChat = false;
 pokemmo.Chat.chatLog = new Array();
 pokemmo.Chat.justSentMessage = false;
-pokemmo.Connection.SERVER_HOST = "http://localhost:2828";
-pokemmo.Connection.REGSERVER_HOST = "http://localhost:2827";
+pokemmo.Connection.SERVER_HOST = "http://25.103.184.4:2828";
+pokemmo.Connection.REGSERVER_HOST = "http://25.103.184.4:2827";
 pokemmo.Connection.lastAckMove = 0;
 pokemmo.Game.DIR_DOWN = 0;
 pokemmo.Game.DIR_LEFT = 1;
